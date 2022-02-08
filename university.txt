@@ -1,14 +1,3 @@
 EX GROUP BY: 
 1. 
-**2018
-Mostro le righe 0 - 24 (912 del totale, La query ha impiegato 0.0001 secondi.)
-SELECT `id` FROM `students` WHERE YEAR(`enrolment_date`) = '2018';
-**2019
-Mostro le righe 0 - 24 (1709 del totale, La query ha impiegato 0.0001 secondi.)
-SELECT `id` FROM `students` WHERE YEAR(`enrolment_date`) = '2019';
-**2020
-Mostro le righe 0 - 24 (1645 del totale, La query ha impiegato 0.0001 secondi.)
-SELECT `id` FROM `students` WHERE YEAR(`enrolment_date`) = '2020';
-**2021
-Mostro le righe 0 - 24 (734 del totale, La query ha impiegato 0.0001 secondi.)
-SELECT `id` FROM `students` WHERE YEAR(`enrolment_date`) = '2021';
+SELECT COUNT(`id`) FROM `students` GROUP BY YEAR(`enrolment_date`);
