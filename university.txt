@@ -18,8 +18,13 @@ SELECT COUNT(`id`) FROM `students` WHERE YEAR(`date_of_birth`) = '1990';
 2.
 SELECT COUNT(`id`) FROM `courses` WHERE `cfu` > '10';
 3.
+SELECT `id` FROM `students` WHERE YEAR(CURRENT_DATE()) - YEAR(`date_of_birth`) > '30';
 4.
+SELECT `id` FROM `courses` WHERE `period` = 'I semestre' AND `year` = '1';
 5.
 6.
+SELECT `id` FROM `degrees` WHERE `level` = 'magistrale';
 7.
+SELECT `id`, `name` FROM `departments`;
 8.
+SELECT `id` FROM `teachers` WHERE `phone` IS NULL;
