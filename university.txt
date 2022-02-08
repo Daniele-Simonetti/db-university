@@ -22,6 +22,7 @@ SELECT `id` FROM `students` WHERE YEAR(CURRENT_DATE()) - YEAR(`date_of_birth`) >
 4.
 SELECT `id` FROM `courses` WHERE `period` = 'I semestre' AND `year` = '1';
 5.
+SELECT `id` FROM `exams` WHERE HOUR(`hour`) >= '14' AND `date` = '2020-06-20';
 6.
 SELECT `id` FROM `degrees` WHERE `level` = 'magistrale';
 7.
